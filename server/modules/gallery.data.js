@@ -1,3 +1,4 @@
+
 const galleryItems = [
     { id: 1,
       path: 'images/biking.jpg',
