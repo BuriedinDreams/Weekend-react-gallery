@@ -1,28 +1,20 @@
 
+import GalleryItem from '../GalleryItem/GalleryItem'
 
-
-function GalleryList( {galleryList} ) {
+function GalleryList( {galleryList}  ) {
 
     return(
       <>
         {galleryList.map( photo => ( 
           <>
-            <img src={photo.path}/>
-            <p>key={photo.id}</p> 
-            <p>key={photo.description}</p>
-            <p>key={photo.likes}</p>
-        
+             
+              <GalleryItem
+                key={photo.id} // this is linking the gallery.data.js item to GalleryItem.
+                photo={photo}
+
+              />        
           </>
         ))}
-
-          <ul>
-            <li>RED</li>
-            <li>Green</li>
-            <li>Blue</li> 
-          </ul>
-
-        <p>STUFF</p>
-    
     </>
   );
 }

@@ -3,14 +3,14 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList'
-// import galleryItems from '../'
+import GalleryItem from '../GalleryItem/GalleryItem'
 
 
 
 function App() {
 
   const [ galleryList, setGalleryList ] = useState([]);
-  const [ galleryItems, setGalleryItems ] = useState('');
+ 
 
 
   useEffect(() => {
@@ -29,7 +29,7 @@ function App() {
       })
       .then(response => {
         console.log(response.data, "res data")
-        setGalleryList(response.data)
+        setGalleryList(response.data) // this is making the galleryList the gallery.data"list"
       })
       .catch((error) => {
         console.log('error in GET', error);
@@ -73,6 +73,7 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here </p> 
+      
         <GalleryList
           galleryList={galleryList}
         />

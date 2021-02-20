@@ -1,19 +1,19 @@
 
+// the photo is being retrieved from gallerylist .map (photo)
+// it's each individual item in the gallery.data.js
 
 
-function GalleryItem ( {galleryItem} ) {
+function GalleryItem ( {photo} ) {
 
   return(
+    <>
 
-    
-{/* <img src="images/biking.jpg" alt="Image of myself riding a bike"/>
-        <img src="images/blue_tesla.jpg" alt="Blue Tesla model 3" />
-        <img src="images/my_acoustic.jpg" alt="Image of acoustic guitar"/>
-        <img src="images/myself_catching_fish.jpg" alt="Photo of myself catching a fish"/>
-        <img src="images/painting_of_jimi_hendrix.jpg" alt="Painting of Jimi Hendrix"/> */}    
+      <img src={photo.path}/>
+      <p>key={photo.id}</p> 
+      <p>key={photo.description}</p>
+      <p>key={photo.likes}</p>
 
-
-
+    </>
   )
 
 }
