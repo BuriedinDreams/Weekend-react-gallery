@@ -40,22 +40,21 @@ function App() {
   const updateLikes = (photoID) => {
 
     console.log('Inside the PUT ID', photoID);
-    // const likesId = LikesID.target.likes | not sure if I need this.
+    console.log('number of likes:', photoID.likes);
+    axios({
+      method: 'PUT',
+      url: `/gallery/like/${photoID}`,
+      likes: { photoID }
 
-    // axios({
-    //   method: 'PUT',
-    //   url: `/gallery/${photoID}`,
-    //   data: { photoID }
-
-    // })
-    // .then(response => {
-    //   console.log("response data", response.data)
-    //   getGalleryList()
-    //   setLikesCount(response.data) // this is going to capture the likes button click and update the count by 1.
-    // })
-    // .catch((error) => {
-    //   console.log('error in GET', error);
-    // });
+    })
+    .then(response => {
+      console.log("response data", response.data)
+      getGalleryList()
+      setLikesCount(response.data) // this is going to capture the likes button click and update the count by 1.
+    })
+    .catch((error) => {
+      console.log('error in GET', error);
+    });
   };
   
 

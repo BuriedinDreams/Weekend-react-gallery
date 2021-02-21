@@ -1,0 +1,6 @@
+
+.photo{
+  display: inline-flex;
+  grid-row: auto;
+  max-width: 15rem;
+}
