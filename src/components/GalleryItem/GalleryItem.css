@@ -1,6 +1,8 @@
 
 .photo{
   display: inline-flex;
-  grid-row: auto;
+  position: relative;
+  /* grid-row: auto; */
   max-width: 15rem;
+  /* padding: 5rem; */
 }

@@ -20,7 +20,7 @@ const [isClicked, setIsClicked] = useState(true)
   }
  
   return(
-    <>
+    <div>
 
       
       {isClicked // this is checking if it's true or false | we have default set it to true. 
@@ -34,7 +34,7 @@ const [isClicked, setIsClicked] = useState(true)
       <button onClick={ () => updateLikes(photo.id)  } > Likes Button </button> 
       {/* wire button to updateLikes  */}
 
-    </>
+    </div>
   )
 
 }
