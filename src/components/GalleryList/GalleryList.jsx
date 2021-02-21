@@ -1,7 +1,7 @@
 
 import GalleryItem from '../GalleryItem/GalleryItem'
 
-function GalleryList( {galleryList}  ) {
+function GalleryList( {galleryList, updateLikes } ) {
 
     return(
       <>
@@ -10,8 +10,8 @@ function GalleryList( {galleryList}  ) {
              
               <GalleryItem
                 key={photo.id} // this is linking the gallery.data.js item to GalleryItem.
-                photo={photo}
-
+                photo={photo} // this is the individual item in my gallery.data
+                updateLikes={updateLikes} // this is coming from App.jsx
               />        
           </>
         ))}

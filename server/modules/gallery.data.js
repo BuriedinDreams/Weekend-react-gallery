@@ -2,12 +2,13 @@
 const galleryItems = [
     { id: 1,
       path: 'images/biking.jpg',
-      description: 'Photo of myself and my girlfriend biking in Iowa',
+      description: 'Photo of myself and my girlfriend biking in Iowa.',
       likes: 0 
+      
     },
     { id: 2,
       path: 'images/blue_tesla.jpg',
-      description: 'Photo of a blue Tesla model 3 car. My dream car.',
+      description: 'Photo of a blue Tesla model 3 car, my dream car.',
       likes: 0
     },
     { id: 3,

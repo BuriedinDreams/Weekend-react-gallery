@@ -8,9 +8,9 @@ import GalleryItem from '../GalleryItem/GalleryItem'
 
 
 function App() {
-
+// galleryList is the gallery.data info. | it's an array.
   const [ galleryList, setGalleryList ] = useState([]);
- 
+  const [likesCount, setLikesCount] = useState(0)
 
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function App() {
         url: '/gallery'
       })
       .then(response => {
-        console.log(response.data, "res data")
+        console.log("res data", response.data )
         setGalleryList(response.data) // this is making the galleryList the gallery.data"list"
       })
       .catch((error) => {
@@ -37,34 +37,28 @@ function App() {
   };
 
 
+  const updateLikes = (photoID) => {
 
-   // axios.put(`'/like/${itemId}', GalleryItem)
-  //  const galleryItem = (event) => {
-  //   const itemId = event.target.id;
-  //   const description = event.target.description;
-  //   const photoLikes = event.target.likes;
-  //   console.log('PUT itemId', itemId );
-  //   console.log('PUT description', description );
-  //   console.log('PUT photoLikes', photoLikes );
-  //   axios({
-  //     url: `/list/${itemId}`,
-  //     method: 'PUT',
-  //     data: { galleryItem },
-  //   })
-  //     .then((response) => {
-  //       console.log('Item updated', response);
-  //       getShoppingList();
-  //     })
-  //     .catch((err) => {
-  //       console.log('Unable to update galleryItem', err);
-  //     });
-  // };
+    console.log('Inside the PUT ID', photoID);
+    // const likesId = LikesID.target.likes | not sure if I need this.
 
+    // axios({
+    //   method: 'PUT',
+    //   url: `/gallery/${photoID}`,
+    //   data: { photoID }
 
+    // })
+    // .then(response => {
+    //   console.log("response data", response.data)
+    //   getGalleryList()
+    //   setLikesCount(response.data) // this is going to capture the likes button click and update the count by 1.
+    // })
+    // .catch((error) => {
+    //   console.log('error in GET', error);
+    // });
+  };
+  
 
-
-
-  console.log('GalleryList', galleryList);
 
     return (
       
@@ -72,10 +66,11 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>Gallery goes here </p> 
+        <p> My Gallery </p> 
       
         <GalleryList
           galleryList={galleryList}
+          updateLikes={updateLikes}
         />
 
         
