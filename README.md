@@ -1,9 +1,14 @@
-# Project Name
+# Images Gallery
+This project taught me the Fundamentals of how to use React and how they interact with other pieces such as CSS and the DOM.
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
 
 ## Description
+This application allows you to click on the photos to toggle a description for said photo clicked. 
 
-Your project description goes here. What problem did you solve? How did you solve it?
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+# Build With
+- HTML
+- CSS
+- JavaScript
+- React.js 
+
