@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList'
 import GalleryItem from '../GalleryItem/GalleryItem'
-
+import Button from '@material-ui/core/Button'
 
 
 
@@ -66,7 +66,7 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p className="Title" > You may click on the photos to see a description. </p> 
+        <p className="Title" > You may click on the photos to see a description of the photo. </p> 
       
         <GalleryList
           galleryList={galleryList}

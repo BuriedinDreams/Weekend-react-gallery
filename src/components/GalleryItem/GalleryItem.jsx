@@ -1,3 +1,4 @@
+import { Button } from '@material-ui/core';
 import { useState, useEffect } from 'react';
 import './GalleryItem.css';
 
@@ -31,7 +32,10 @@ const [isClicked, setIsClicked] = useState(true)
       <p className="likeSentence" > number of Likes {photo.likes} </p>
         {/* updateLikes (photo.id ) is grabbing the id. */}
         {/* updateLikes is running the function in app.jsx | which is a PUT. */}
-      <button className="likeBtn" onClick={ () => updateLikes(photo.id)  } > Likes Button </button> 
+      {/* <button className="likeBtn" onClick={ () => updateLikes(photo.id)  } > Likes Button </button>  */}
+      <Button variant="outlined" color="secondary" className="likeBtn" onClick={ () => updateLikes(photo.id)  }  >
+      Likes Button
+      </Button>
       {/* wire button to updateLikes  */}
 
     </div>
