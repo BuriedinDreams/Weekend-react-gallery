@@ -20,18 +20,18 @@ const [isClicked, setIsClicked] = useState(true)
   }
  
   return(
-    <div>
+    <div className="theWhole" >
 
       
       {isClicked // this is checking if it's true or false | we have default set it to true. 
         ? <img className="photo" onClick={itemClicked}  src={photo.path}/> 
-        : <p onClick={itemClicked}>  {photo.description}</p>
+        : <p className="description" onClick={itemClicked}>  {photo.description}</p>
       }
      
-      <p> Like this Photo {photo.likes} </p>
+      <p className="likeSentence" > number of Likes {photo.likes} </p>
         {/* updateLikes (photo.id ) is grabbing the id. */}
         {/* updateLikes is running the function in app.jsx | which is a PUT. */}
-      <button onClick={ () => updateLikes(photo.id)  } > Likes Button </button> 
+      <button className="likeBtn" onClick={ () => updateLikes(photo.id)  } > Likes Button </button> 
       {/* wire button to updateLikes  */}
 
     </div>

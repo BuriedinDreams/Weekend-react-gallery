@@ -7,6 +7,7 @@ import GalleryItem from '../GalleryItem/GalleryItem'
 
 
 
+
 function App() {
 // galleryList is the gallery.data info. | it's an array.
   const [ galleryList, setGalleryList ] = useState([]);
@@ -65,7 +66,7 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p> My Gallery </p> 
+        <p className="Title" > You may click on the photos to see a description. </p> 
       
         <GalleryList
           galleryList={galleryList}
