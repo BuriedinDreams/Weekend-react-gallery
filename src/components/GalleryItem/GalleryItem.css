@@ -1,0 +1,40 @@
+
+
+
+.photo{
+  /* display: inline-flex; */
+  position: relative;
+  /* grid-row: auto; */
+  max-width: 15rem;
+  /* padding: 5rem; */
+}
+
+.theWhole{
+  display: inline-block;
+  padding: 2rem ;
+  
+}
+
+.likeSentence{
+  font-size: 1.5em;
+  color: white;
+}
+/* really want to figure out how to make words on DOM show up more vertically. */
+.description{
+  /* text-align: center; */
+  font-size: 1.5em;
+  color: white;
+  border: solid gray;
+  padding: 1rem;
+  max-width: 8rem;
+  /* column-width: 100px; */
+  /* column-gap: 60px; */
+  /* flex-wrap: wrap; */
+  align-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.likeBtn{
+  background-color: rgba(0, 252, 21, 0.728);
+}
