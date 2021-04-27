@@ -7,10 +7,10 @@ import './GalleryItem.css';
 
 // need to have updateLikes 
 function GalleryItem ( {photo, updateLikes} ) {
-// const [Count , setCount ] = useState(0)
-const [isClicked, setIsClicked] = useState(true)
+  // const [Count , setCount ] = useState(0)
+  const [isClicked, setIsClicked] = useState(true)
 
-// this is our toggle
+  // this is our toggle
   function itemClicked() { // this.val() | currently is true because isClicked is useState(true)  
     console.log('photo is clicked');
     console.log('photo description', photo.description);
