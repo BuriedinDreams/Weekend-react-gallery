@@ -24,7 +24,7 @@ function GalleryItem ( {photo, updateLikes} ) {
     <div className="theWhole" >
 
       
-      {isClicked // this is checking if it's true or false | we have default set it to true. 
+      {isClicked // this is checking if it's true or false | default set it to true. 
         ? <img className="photo" onClick={itemClicked}  src={photo.path}/> 
         : <p className="description" onClick={itemClicked}>  {photo.description}</p>
       }

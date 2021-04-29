@@ -1,7 +1,4 @@
-
-
-
-.photo{
+.photo {
   /* display: inline-flex; */
   position: relative;
   /* grid-row: auto; */
@@ -9,18 +6,18 @@
   /* padding: 5rem; */
 }
 
-.theWhole{
+.theWhole {
   display: inline-block;
-  padding: 2rem ;
-  
+
+  padding: 2rem;
 }
 
-.likeSentence{
+.likeSentence {
   font-size: 1.5em;
   color: white;
 }
 /* really want to figure out how to make words on DOM show up more vertically. */
-.description{
+.description {
   /* text-align: center; */
   font-size: 1.5em;
   color: white;
@@ -35,6 +32,6 @@
   /* justify-content: center; */
 }
 
-.likeBtn{
+.likeBtn {
   background-color: rgba(0, 252, 21, 0.728);
 }
